@@ -19,19 +19,15 @@ Load Expectation, hours/year) and **EENS** (Expected Energy Not Served).
 This repository computes those quantities exactly for the Belgian
 electricity system using public operational data.
 
-The probabilistic ingredients themselves are deliberately conventional:
-generating units are represented by forced-outage rates, demand comes
-from measured quarter-hourly net load, and adequacy is expressed through
-the standard LOLE and EENS metrics.
+The probabilistic ingredients are conventional — forced-outage rates,
+measured quarter-hourly net load, the standard LOLE and EENS metrics.
+The contribution is not the adequacy model but the **computational
+validation methodology**:
 
-**The novelty is not the adequacy model.**
-
-The contribution is the **computational validation methodology**.
-
-An exact probabilistic solution obtained by FFT convolution is
+an exact probabilistic solution obtained by FFT convolution is
 independently reproduced by a separately developed Monte Carlo
-simulation. Agreement between two fundamentally different computational
-approaches is required before any engineering conclusions are accepted.
+simulation, and agreement between the two is required before any
+engineering conclusion is accepted.
 
 ------------------------------------------------------------------------
 
@@ -62,6 +58,11 @@ high-consequence engineering models:
 -   reconciliation of discrepancies;
 -   reproducible quantitative results;
 -   engineering interpretation built only on validated computations.
+
+The same discipline runs through the companion
+[LongevityRisk](https://github.com/evrelegh/LongevityRisk) (pension longevity)
+and [ClinicalSupplyRisk](https://github.com/evrelegh/ClinicalSupplyRisk)
+(clinical-trial drug demand) studies.
 
 ------------------------------------------------------------------------
 
@@ -144,20 +145,6 @@ All inputs originate from public data sources (Elia Open Data and
 ENTSO-E). Running the notebook reproduces every figure, validation
 experiment and engineering result.
 
-------------------------------------------------------------------------
-
-## Computational philosophy
-
-This repository is part of a broader series of quantitative
-risk-modelling studies built around one principle:
-
-> **Important numerical results should be independently verified before
-> they are interpreted.**
-
-The objective is therefore not simply to produce another LOLE estimate,
-but to demonstrate a computational methodology in which **exact
-probabilistic methods**, **independent numerical verification**, and
-**decision-oriented engineering analysis** receive equal emphasis.
 
 ------------------------------------------------------------------------
 
@@ -165,6 +152,5 @@ probabilistic methods**, **independent numerical verification**, and
 
 **Erik Van Releghem** · PHNX
 
-*Demonstrating quantitative modelling for high-consequence engineering
-systems through exact probabilistic computation, independent
-computational verification, and reproducible scientific software.*
+*Part of a series of quantitative risk-modelling studies built on exact
+probabilistic computation with independent numerical verification.*
