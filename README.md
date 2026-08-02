@@ -1,4 +1,4 @@
-# Resource Adequacy
+# Electricity Resource Adequacy
 
 ![Computational framework](figures/framework.svg)
 
