@@ -2,9 +2,7 @@
 
 ![Computational framework](figures/framework.svg)
 
-**Probabilistic electricity resource-adequacy assessment — LOLE/EENS by exact FFT convolution on real
-grid data, validated against Monte Carlo, with the interconnection and marginal-value results that
-follow.**
+**Probabilistic electricity resource-adequacy assessment using exact FFT convolution on real grid data, independently validated against Monte Carlo, with engineering insights into interconnection value and marginal capacity contributions.**
 
 ---
 
